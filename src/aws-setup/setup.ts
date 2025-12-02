@@ -1,7 +1,7 @@
 import { DynamoDBClient, CreateTableCommand, ResourceInUseException } from "@aws-sdk/client-dynamodb";
 import { IAMClient, CreateRoleCommand, AttachRolePolicyCommand, GetRoleCommand } from "@aws-sdk/client-iam";
 import { LambdaClient, CreateFunctionCommand, UpdateFunctionCodeCommand, GetFunctionCommand, ResourceConflictException } from "@aws-sdk/client-lambda";
-import { ApiGatewayV2Client, CreateApiCommand, CreateIntegrationCommand, CreateRouteCommand, CreateStageCommand, GetApiCommand } from "@aws-sdk/client-api-gateway-v2";
+import { ApiGatewayV2Client, CreateApiCommand, CreateIntegrationCommand, CreateRouteCommand, CreateStageCommand, GetApiCommand } from "@aws-sdk/client-apigatewayv2";
 import * as fs from 'fs';
 import * as path from 'path';
 import archiver from 'archiver';
