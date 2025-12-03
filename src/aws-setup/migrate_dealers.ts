@@ -53,7 +53,7 @@ async function migrate() {
                 }));
                 process.stdout.write("."); // Progress indicator
                 successCount++;
-            } catch (err) {
+            } catch (err: any) {
                 console.error(`\n❌ Failed to upload dealer ${dealer.title}:`, err.message);
                 failCount++;
             }
